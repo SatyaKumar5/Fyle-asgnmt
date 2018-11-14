@@ -21,7 +21,7 @@ class App extends Component {
     this.componentDidMount(query);
   }
   componentDidMount(query){
-    var api = 'http://www.omdbapi.com/?i=tt3896198&apikey=90c556a5&s='
+    var api = 'https://www.omdbapi.com/?i=tt3896198&apikey=90c556a5&s='
 
     axios.get(api + query)
       .then(response =>
