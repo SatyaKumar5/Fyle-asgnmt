@@ -9,7 +9,7 @@ import Search from './Search';
 
 class MovieSearch extends Component {
     state = {
-        movieId: 'tt1442449', // default imdb id (Spartacus)
+        movieId: 'tt4154756',
         title: " ",
         movie: {},
         searchResults: [],
