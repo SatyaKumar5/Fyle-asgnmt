@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-// import MovieCard from 'components/MovieCard/MovieCard';
-// import Search from 'components/Search/Search';
-import MovieCard from './MovieCard';
-import Search from './Search';
-
+import MovieCard from '../../components/MovieCard/MovieCard';
+import Search from '../../components/Search/Search';
 
 class MovieSearch extends Component {
     state = {
-        movieId: 'tt1442449', // default imdb id (Spartacus)
-        title: " ",
+        movieId: 'tt4154756',
+        title: "",
         movie: {},
         searchResults: [],
         isSearching: false,
@@ -40,7 +37,7 @@ class MovieSearch extends Component {
     timeout = null;
 
     searchMovie = (event) => {
-        this.setState({ title: event.target.value, isSearching: true })
+        this.setState({ title: "event.target.value, isSearching: true })"
 
         clearTimeout(this.timeout);
 
@@ -51,6 +48,7 @@ class MovieSearch extends Component {
                     if (response.data.Search) {
                         const movies = response.data.Search.slice(0, 5);
                         this.setState({ searchResults: movies });
+
                     }
                 })
                 .catch(error => {
@@ -67,7 +65,7 @@ class MovieSearch extends Component {
             {
                 movieId: item.imdbID,
                 isSearching: false,
-                title: ""
+                title: "item.Title,"
             }
         )
     }
