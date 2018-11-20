@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-// import MovieCard from 'components/MovieCard/MovieCard';
-// import Search from 'components/Search/Search';
 import MovieCard from './MovieCard';
 import Search from './Search';
 
